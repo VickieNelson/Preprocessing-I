@@ -63,6 +63,7 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
+//variables and mixins
 
 @heading-font: 'Karla', sans-serif;
 @body-font: 'Roboto', sans-serif;
@@ -72,57 +73,155 @@ html, body {
 @accentColor: #E1C7CE;
 @bodyFontColor: #000005;
 
+.flexit () {
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
+//start section code
 
 html{
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
 
-*, *:before, *:after{
-	box-sizing: inherit;
-}
-
-h1, h2, h3, h4 {
-	font-size: 4rem;
-	font-family:@heading-font;
-	color:@fontColor;
-  }
-
-
-body{
-	font-family: @body-font;
-	font-size: 1.8rem;
-	line-height: 1.5;
-	color:@bodyFontColor;
-	
-}
-
-
 
 img {
-	width: 30%;
+	width: 80%;
+	height: 20%;
+	margin-left: 5%;
+	padding: 4px;
+}
+
+.headersection {
+	.flexit() 
 
 }
 
+p {
+	font-family: @body-font;
+	font-size: 1.8rem;
+	color: @bodyFontColor;
 
-
-
-
-
-
-
-
-
-
+}
 .div1 {
-	width: 30%;
-} //this closes div1
+	margin-left: 5%;
+	width: 30%
+}
 
 .div2 {
-	width: 70%
+	margin-top: 2%;
+	margin-left: 15%;
+	padding-left: 15%;
+	width: 40%;
+	}
+
+	h1 {
+		font-size: 4rem;
+		color: @fontColor;
+}//closes h1
+
+	h2, {
+		font-size:3rem;
+		color: @sectionColor;
 	
+}//closes h2
+
+h3 {
+	font-size: 2.4rem;
 }
 
-//this closes div2
-// this closes header
+h4 {
+	font-size: 2rem;
+}
+p {
+	font-size: 1.8rem;
+}
+
+.sectionCard {
+	width: 25%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	line-height: 1.25;
+	padding-right: 2%;
+	padding:2px;
+	
+
+	h2 {
+		font-size: 2.8rem;
+		color: @sectionColor;
+		font-weight: bold;
+	}
+}
+
+.containerBody1 {
+	.flexit();
+	margin-bottom: 24px;
+	margin-left: 2%;
+}
+
+.containerBody2 {
+	width: 100%;
+	margin-bottom: 24px;
+	margin-left: 2%;
+
+	.sectionCard2 {
+		width: 100%;
+		margin-top: 5%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+		line-height: 1.25;
+		
+		h2 {
+			font-size: 2.8rem;
+			color: @sectionColor;
+			font-weight: bold;
+		}
+
+		h3 {
+			font-size: 2.4rem;
+			color: @fontColor;
+			
+		}
+
+		h4 {
+			color: @sectionColor;
+			font-size: 1.8rem;
+		}
+		.job1 {
+			width: 100%;
+			margin-left: 2%;
+			margin-right: 2%;
+			padding-left: 2%;
+		}
+		.job2 {
+			width: 50%;
+			margin-left: 2%;
+			margin-top: 24px;
+			margin-right: 24px;
+			padding-left: 2%;
+		}
+	}
+	p {
+		font-size: 2.0rem;
+		line-height: 1.25;
+	}
+}
+
+footer {
+	height: fit-content;
+	margin-top: 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color: @accentColor;
+	h3, h4 {
+		line-height: 1.5;
+		font-size: 2.4rem;
+		text-align: center;
+
+	}
+
+}

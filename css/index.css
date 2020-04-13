@@ -180,31 +180,124 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+img {
+  width: 80%;
+  height: 20%;
+  margin-left: 5%;
+  padding: 4px;
 }
-h1,
-h2,
-h3,
-h4 {
-  font-size: 4rem;
-  font-family: 'Karla', sans-serif;
-  color: #858585;
+.headersection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
-body {
+p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
-  line-height: 1.5;
   color: #000005;
 }
-img {
-  width: 30%;
-}
 .div1 {
+  margin-left: 5%;
   width: 30%;
 }
 .div2 {
-  width: 70%;
+  margin-top: 2%;
+  margin-left: 15%;
+  padding-left: 15%;
+  width: 40%;
+}
+h1 {
+  font-size: 4rem;
+  color: #858585;
+}
+h2 {
+  font-size: 3rem;
+  color: #6F4C3B;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.8rem;
+}
+.sectionCard {
+  width: 25%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  line-height: 1.25;
+  padding-right: 2%;
+  padding: 2px;
+}
+.sectionCard h2 {
+  font-size: 2.8rem;
+  color: #6F4C3B;
+  font-weight: bold;
+}
+.containerBody1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  margin-left: 2%;
+}
+.containerBody2 {
+  width: 100%;
+  margin-bottom: 24px;
+  margin-left: 2%;
+}
+.containerBody2 .sectionCard2 {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  line-height: 1.25;
+}
+.containerBody2 .sectionCard2 h2 {
+  font-size: 2.8rem;
+  color: #6F4C3B;
+  font-weight: bold;
+}
+.containerBody2 .sectionCard2 h3 {
+  font-size: 2.4rem;
+  color: #858585;
+}
+.containerBody2 .sectionCard2 h4 {
+  color: #6F4C3B;
+  font-size: 1.8rem;
+}
+.containerBody2 .sectionCard2 .job1 {
+  width: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 2%;
+}
+.containerBody2 .sectionCard2 .job2 {
+  width: 50%;
+  margin-left: 2%;
+  margin-top: 24px;
+  margin-right: 24px;
+  padding-left: 2%;
+}
+.containerBody2 p {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+footer {
+  height: fit-content;
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #E1C7CE;
+}
+footer h3,
+footer h4 {
+  line-height: 1.5;
+  font-size: 2.4rem;
+  text-align: center;
 }
