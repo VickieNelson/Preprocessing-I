@@ -59,17 +59,70 @@ html, body {
 }
 
 //import google fonts
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap'
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 
-
-
-
-
-@heading-font: 'Karla', sans-serif;;
+@heading-font: 'Karla', sans-serif;
 @body-font: 'Roboto', sans-serif;
 @pageWhite: #FBFBFB;
 @fontColor: #858585;
 @sectionColor: #6F4C3B;
 @accentColor: #E1C7CE;
+@bodyFontColor: #000005;
+
+
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4 {
+	font-size: 4rem;
+	font-family:@heading-font;
+	color:@fontColor;
+  }
+
+
+body{
+	font-family: @body-font;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	color:@bodyFontColor;
+	
+}
+
+
+
+img {
+	width: 30%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.div1 {
+	width: 30%;
+} //this closes div1
+
+.div2 {
+	width: 70%
+	
+}
+
+//this closes div2
+// this closes header
