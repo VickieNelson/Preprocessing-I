@@ -93,8 +93,7 @@ align-items: center;
 
 .headlineBorder(){
 	border-top: 1px solid @accentColor;
-	border-bottom: 1px solid @accentColor;
-	padding:1%;
+	padding:3%;
 }
 
 .hover(){
@@ -138,7 +137,7 @@ img {
 }
 
 p {
-	line-height: 1.25;
+	line-height: 1.5;
 	margin: 20px;
 	font-size: 1.8rem;
 }
@@ -155,11 +154,16 @@ section {
 
 .imageSection {
 	.flexit()
+
+	.contactInfo {
+		height: 300px;
+	}
 }
 
 .contactInfo {
 	margin-top: 5%;
 	padding-top: 2%;
+	
 
 	h1 {
 		margin-left: 3%;
@@ -170,7 +174,8 @@ section {
 }
 
 nav {
-	margin-bottom: 5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	display:flex;
 	justify-content: space-evenly;
 	font-size: 1.8rem;
@@ -181,5 +186,21 @@ nav {
 nav a {
 	text-decoration: none;
 	color: @sectionColor
-	padding-bottom: 12px;
+
+}
+
+.sectionCard {
+	.headlineBorder()	
+}
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: @accentColor;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2%;
+	line-height: 1.25;
 }
