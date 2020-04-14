@@ -1,7 +1,7 @@
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -17,45 +17,45 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
-	height: 100%;
-	
+height: 100%;
+
 }
 
 //import google fonts
@@ -73,155 +73,113 @@ html, body {
 @accentColor: #E1C7CE;
 @bodyFontColor: #000005;
 
+
+// flex rules
 .flexit () {
-	display:flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
+display:flex;
+justify-content: space-between;
+align-items: center;
+
+//add media query to flexit
+@media (max-width: 500px) {
+	flex-direction: column;
+	width: 100%;
+	h2 {
+		font-size:2.4rem;
+	} //closes h2
+	}//closes media
+
+} //closes flexit
+
+.headlineBorder(){
+	border-top: 1px solid @accentColor;
+	border-bottom: 1px solid @accentColor;
+	padding:1%;
 }
 
-//start section code
-
+.hover(){
+	&:hover {
+		color:@accentColor;
+		text-decoration: underline;
+	}
+}
 html{
 	box-sizing: border-box;
 	font-size: 62.5%;
+	}
+
+//start section code
+h1, {
+	font-size: 4.0rem;
+	font-family: @heading-font;
+	color: @fontColor;
 }
 
+h2{
+	font-size: 3.0rem;
+	font-family: @heading-font;
+	color: @sectionColor;
+	font-weight: bold;
+}
+
+h3, h4, {
+	font-size: 2.0rem;
+	font-family: @heading-font;
+	color: @bodyFontColor;
+	font-weight: bold;
+}
+
+body{
+	font-family: @body-font;
+}
 
 img {
-	width: 80%;
-	height: 20%;
-	margin-left: 5%;
-	padding: 4px;
-}
-
-.headersection {
-	.flexit() 
-
+	width: 50%;
 }
 
 p {
-	font-family: @body-font;
+	line-height: 1.25;
+	margin: 20px;
 	font-size: 1.8rem;
-	color: @bodyFontColor;
-
-}
-.div1 {
-	margin-left: 5%;
-	width: 30%
 }
 
-.div2 {
-	margin-top: 2%;
-	margin-left: 15%;
-	padding-left: 15%;
-	width: 40%;
-	}
+.pageContainer {
+
+	max-width: 900px;
+	margin: auto;
+}
+
+section {
+	padding-bottom: 24px;
+}
+
+.imageSection {
+	.flexit()
+}
+
+.contactInfo {
+	margin-top: 5%;
+	padding-top: 2%;
 
 	h1 {
-		font-size: 4rem;
-		color: @fontColor;
-}//closes h1
-
-	h2, {
-		font-size:3rem;
-		color: @sectionColor;
-	
-}//closes h2
-
-h3 {
-	font-size: 2.4rem;
-}
-
-h4 {
-	font-size: 2rem;
-}
-p {
-	font-size: 1.8rem;
-}
-
-.sectionCard {
-	width: 25%;
-	margin-top: 5%;
-	margin-left: 5%;
-	margin-bottom: 5%;
-	line-height: 1.25;
-	padding-right: 2%;
-	padding:2px;
-	
-
+		margin-left: 3%;
+	}
 	h2 {
-		font-size: 2.8rem;
-		color: @sectionColor;
-		font-weight: bold;
+		margin-left: 3%;
 	}
 }
 
-.containerBody1 {
-	.flexit();
-	margin-bottom: 24px;
-	margin-left: 2%;
+nav {
+	margin-bottom: 5%;
+	display:flex;
+	justify-content: space-evenly;
+	font-size: 1.8rem;
+	.hover()
+
 }
 
-.containerBody2 {
-	width: 100%;
-	margin-bottom: 24px;
-	margin-left: 5%;
-	padding-left: 2%;
-
-	.sectionCard2 {
-		width: 100%;
-		margin-top: 5%;
-		margin-bottom: 5%;
-		line-height: 1.25;
-		
-		h2 {
-			font-size: 2.8rem;
-			color: @sectionColor;
-			font-weight: bold;
-		}
-
-		h3 {
-			font-size: 2.4rem;
-			color: @fontColor;
-			font-weight: bold;			
-		}
-
-		h4 {
-			color: @sectionColor;
-			font-size: 1.8rem;
-		}
-		.job1 {
-			width: 100%;
-			margin-left: 2%;
-			margin-right: 2%;
-			padding-left: 2%;
-		}
-		.job2 {
-			width: 50%;
-			margin-left: 2%;
-			margin-top: 24px;
-			margin-right: 24px;
-			padding-left: 2%;
-		}
-	}
-	p {
-		font-size: 2.0rem;
-		line-height: 1.25;
-	}
-}
-
-footer {
-	height: fit-content;
-	margin-top: 16px;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	background-color: @accentColor;
-	h3, h4 {
-		line-height: 1.5;
-		font-size: 2.4rem;
-		text-align: center;
-
-	}
-
+nav a {
+	text-decoration: none;
+	color: @sectionColor
+	padding-bottom: 12px;
 }
